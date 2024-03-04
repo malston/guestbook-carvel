@@ -10,7 +10,6 @@ frontend: ""
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: default
   name: frontend
 spec:
   ports:
@@ -20,7 +19,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: default
   name: frontend
   annotations:
     kapp.k14s.io/update-strategy: fallback-on-replace
@@ -48,7 +46,6 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  namespace: default
   name: frontend-config
   annotations:
     kapp.k14s.io/versioned: ""
