@@ -1,5 +1,6 @@
 #@data/values
 ---
+namespace: default
 redis_port: 6379
 katacoda: false
 push_images: false
