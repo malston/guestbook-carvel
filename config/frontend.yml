@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gcr.io/google-samples/gb-frontend:v4
+        image: gcr.io/google_samples/gb-frontend-arm64:v5
         resources:
           requests:
             cpu: 100m

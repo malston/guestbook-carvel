@@ -1,4 +1,4 @@
-FROM php:5-apache
+FROM php:8.3.3-apache-bullseye
 
 RUN apt-get update
 RUN pear channel-discover pear.nrk.io

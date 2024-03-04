@@ -1,3 +1,3 @@
-FROM redis:3.2.9
+FROM redis:6.0.5
 COPY run.sh /
 CMD /run.sh
