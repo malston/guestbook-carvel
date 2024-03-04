@@ -2,14 +2,16 @@
 
 apiVersion: kbld.k14s.io/v1alpha1
 kind: ImageOverrides
-name: redis-image-overrides
+metadata:
+  name: redis-image-overrides
 overrides:
 - image: k8s.gcr.io/redis:e2e
   newImage: redis:6.0.5 #! Use same redis version as one used for redis-slave
 ---
 apiVersion: kbld.k14s.io/v1alpha1
 kind: Sources
-name: frontend-sources
+metadata:
+  name: frontend-sources
 sources:
 - image: gcr.io/google_samples/gb-frontend-arm64:v5
   path: frontend
